@@ -3,5 +3,5 @@
 }
 
 .inner {
-  @apply flex flex-col w-[600px] px-[16px] pb-[8px];
+  @apply flex flex-col w-[600px] px-[16px] pb-[8px] drop-shadow-md;
 }
