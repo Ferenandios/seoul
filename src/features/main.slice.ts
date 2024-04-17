@@ -50,5 +50,10 @@ const mainSlice = createSlice({
 });
 
 export default mainSlice.reducer;
-export const { setValue, addItem, toggleItem, toggleFilterButtonActive } =
-  mainSlice.actions;
+export const {
+  setValue,
+  addItem,
+  toggleItem,
+  toggleFilterButtonActive,
+  setItems,
+} = mainSlice.actions;
