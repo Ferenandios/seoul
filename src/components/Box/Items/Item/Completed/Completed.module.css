@@ -1,0 +1,7 @@
+.ansoc {
+  @apply flex items-center h-full;
+}
+
+.inner {
+  @apply flex justify-center items-center w-[32px] h-[32px] border border-[#EDEDED] rounded-full;
+}
