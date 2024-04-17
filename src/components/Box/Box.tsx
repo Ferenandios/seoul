@@ -1,10 +1,13 @@
 import { FC } from "react";
 import styles from "./Box.module.css";
+import Input from "./Input/Input";
 
 const Box: FC = (): JSX.Element => {
   return (
     <>
-      <div className={styles.inner}></div>
+      <div className={styles.inner}>
+        <Input />
+      </div>
     </>
   );
 };
