@@ -1,0 +1,3 @@
+.inner {
+  @apply flex flex-col min-h-[200px];
+}
