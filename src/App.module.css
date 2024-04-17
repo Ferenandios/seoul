@@ -1,0 +1,7 @@
+.ansoc {
+  @apply flex justify-center items-center w-screen min-h-screen bg-[#F5F5F5];
+}
+
+.inner {
+  @apply flex flex-col w-[600px] px-[16px] pb-[8px];
+}
