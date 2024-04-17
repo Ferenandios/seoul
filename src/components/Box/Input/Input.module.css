@@ -1,0 +1,3 @@
+.inner {
+  @apply flex gap-[16px] w-full h-[60px] px-[8px];
+}
