@@ -9,7 +9,7 @@ const Title: FC<{ item: IItem }> = ({ item }): JSX.Element => {
         <h1
           style={{
             color: item.completed ? "#EDEDED" : "",
-            textDecoration: item.completed ? "line-through" : "",
+            textDecorationLine  : item.completed ? "line-through" : "",
             textDecorationColor: "#EDEDED",
           }}
           className={styles.title}
