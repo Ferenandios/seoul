@@ -1,0 +1,7 @@
+.ansoc {
+  @apply flex items-center h-full;
+}
+
+.button {
+  @apply text-black text-opacity-40 rounded px-[4px];
+}
