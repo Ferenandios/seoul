@@ -3,5 +3,5 @@
 }
 
 .inner {
-  @apply text-black opacity-40;
+  @apply text-black min-w-[100px] opacity-40;
 }
