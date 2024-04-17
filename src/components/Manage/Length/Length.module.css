@@ -1,7 +1,0 @@
-.ansoc {
-  @apply flex items-center h-full;
-}
-
-.inner {
-  @apply text-black min-w-[100px] opacity-40;
-}
