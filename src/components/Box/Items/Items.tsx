@@ -3,6 +3,7 @@ import { useAppSelector } from "../../../hooks/hooks";
 import Item from "./Item/Item";
 import styles from "./Items.module.css";
 import { type IItem } from "../../../types/types";
+import Empty from "./Empty/Empty";
 
 const Items: FC = (): JSX.Element => {
   const { items, filterBy } = useAppSelector((state) => state);
@@ -11,14 +12,24 @@ const Items: FC = (): JSX.Element => {
     if (filterBy === "Completed") return item.completed;
     return true; // filterBy === 'All'
   };
+  const filterItems = (items: IItem[]): IItem[] => {
+    return items.filter((item) => filterFunc(item));
+  };
+  const filteredItems: IItem[] = filterItems(items);
   return (
     <>
       <div className={styles.inner}>
-        {items
-          .filter((item) => filterFunc(item))
-          .map((item) => (
-            <Item key={item.id} item={item} />
-          ))}
+        {filteredItems.length ? (
+          <>
+            {filteredItems.map((item) => (
+              <Item key={item.id} item={item} />
+            ))}
+          </>
+        ) : (
+          <>
+            <Empty />
+          </>
+        )}
       </div>
     </>
   );
