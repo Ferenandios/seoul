@@ -8,7 +8,7 @@ import { toggleItem } from "../../../../../features/main.slice";
 const Completed: FC<{ item: IItem }> = ({ item }): JSX.Element => {
   const dispatch = useAppDispatch();
   const handleClick = () => {
-    dispatch(toggleItem(item.id - 1));
+    dispatch(toggleItem(item.id));
   };
   return (
     <>
