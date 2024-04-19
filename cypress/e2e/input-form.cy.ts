@@ -1,7 +1,9 @@
-const baseUrl = "http://localhost:5173/";
 describe("Input form", () => {
+  beforeEach(() => {
+    cy.visit("/");
+  });
   it("foceses input on load", () => {
-    cy.visit(baseUrl);
+    cy.visit("/");
     cy.focused().should("have.id", "field");
   });
 });
