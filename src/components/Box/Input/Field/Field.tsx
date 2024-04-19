@@ -21,6 +21,8 @@ const Field: FC = (): JSX.Element => {
         onKeyUp={(event) => handleKeyUp(event)}
         onChange={(event) => handleChange(event)}
         value={value}
+        autoFocus
+        id="field"
         className={styles.input}
         placeholder="What needs to be done?"
         type="text"
