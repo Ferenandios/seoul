@@ -21,16 +21,23 @@ const mainSlice = createSlice({
       state.value = action.payload;
     },
     addItem: (state, action: PayloadAction<string>) => {
+      // Set new id by last item.id of todos
+      const setId: number = state.items.length
+        ? state.items[state.items.length - 1].id + 1
+        : 0;
+      // Set values
       const item: IItem = {
-        id: state.items.length + 1,
+        id: setId,
         title: action.payload,
         completed: false,
       };
       state.items.push(item);
     },
     toggleItem: (state, action: PayloadAction<number>) => {
-      state.items[action.payload].completed =
-        !state.items[action.payload].completed;
+      // Find out index of element in items
+      const index = state.items.findIndex((item) => item.id === action.payload);
+      // Change completed for an item
+      state.items[index].completed = !state.items[index].completed;
     },
     toggleFilterButtonActive: (state, action: PayloadAction<number>) => {
       // Toggle active property for button[action.payload]
