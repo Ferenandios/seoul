@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { useAppDispatch, useAppSelector } from "../../../../hooks/hooks";
 import { setItems } from "../../../../features/main.slice";
+import styles from "./Clear.module.css";
 
 const Clear: FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -10,11 +11,8 @@ const Clear: FC = (): JSX.Element => {
   };
   return (
     <>
-      <div className="flex items-center h-full">
-        <button
-          onClick={handleClick}
-          className="text-black text-opacity-40 max-w-[150px] whitespace-nowrap overflow-hidden overflow-ellipsis"
-        >
+      <div className={styles.ansoc}>
+        <button onClick={handleClick} className={styles.button}>
           Clear completed
         </button>
       </div>
