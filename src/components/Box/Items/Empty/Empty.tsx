@@ -7,7 +7,7 @@ const Empty: FC = (): JSX.Element => {
   return (
     <>
       <div className={styles.ansoc}>
-        <h1 className={styles.title}>
+        <h1 data-test="empty" className={styles.title}>
           {filterBy === "All" ? "No items found" : `No ${filterBy} items found`}
         </h1>
       </div>

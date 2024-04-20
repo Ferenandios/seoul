@@ -22,7 +22,7 @@ const Field: FC = (): JSX.Element => {
         onChange={(event) => handleChange(event)}
         value={value}
         autoFocus
-        id="field"
+        data-test="field"
         className={styles.input}
         placeholder="What needs to be done?"
         type="text"

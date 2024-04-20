@@ -15,6 +15,7 @@ const Completed: FC<{ item: IItem }> = ({ item }): JSX.Element => {
       <div className={styles.ansoc}>
         <button
           onClick={handleClick}
+          data-test="completed"
           style={{ borderColor: item.completed ? "#A4D5C9" : "" }}
           className={styles.inner}
         >

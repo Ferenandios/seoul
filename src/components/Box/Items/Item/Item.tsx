@@ -6,10 +6,12 @@ import Title from "./Title/Title";
 
 const Item: FC<{ item: IItem }> = ({ item }): JSX.Element => {
   return (
-    <div className={styles.inner}>
-      <Completed item={item} />
-      <Title item={item} />
-    </div>
+    <>
+      <div data-test="item" className={styles.inner}>
+        <Completed item={item} />
+        <Title item={item} />
+      </div>
+    </>
   );
 };
 

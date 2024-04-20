@@ -21,6 +21,7 @@ const Button: FC<{ button: IFilterButtonList }> = ({ button }): JSX.Element => {
             borderWidth: button.active ? "1px" : "",
             cursor: isCurrentActiveButton ? "default" : "pointer",
           }}
+          data-test="filterButton"
           className={styles.button}
         >
           {button.type}

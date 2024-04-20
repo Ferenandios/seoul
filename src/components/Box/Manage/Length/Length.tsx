@@ -8,7 +8,7 @@ const Length: FC = (): JSX.Element => {
   return (
     <>
       <div className={styles.ansoc}>
-        <span className={styles.inner}>
+        <span data-test="length" className={styles.inner}>
           {notCompletedItems.length}{" "}
           {notCompletedItems.length === 1 ? "item" : "items"} left
         </span>

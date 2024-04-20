@@ -12,7 +12,11 @@ const Clear: FC = (): JSX.Element => {
   return (
     <>
       <div className={styles.ansoc}>
-        <button onClick={handleClick} className={styles.button}>
+        <button
+          onClick={handleClick}
+          data-test="clear"
+          className={styles.button}
+        >
           Clear completed
         </button>
       </div>
