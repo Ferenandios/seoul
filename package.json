@@ -1,6 +1,7 @@
 {
   "name": "seoul",
   "private": true,
+  "homepage": "https://ferenandios.github.io/seoul/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,10 +9,13 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
+    "gh-pages": "^6.1.1",
     "hex-rgb": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
