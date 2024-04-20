@@ -1,0 +1,3 @@
+.inner {
+  @apply flex items-center w-full border-b border-[#EDEDED] gap-[16px] px-[8px] py-[9px];
+}

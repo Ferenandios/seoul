@@ -1,0 +1,7 @@
+.ansoc {
+  @apply flex justify-center w-full;
+}
+
+.title {
+  @apply font-thin text-[72px] text-lime-300;
+}
